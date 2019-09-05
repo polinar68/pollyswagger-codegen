@@ -1,13 +1,13 @@
 package io.swagger.model;
 import java.util.Objects;
-import io.swagger.model.Animal;
+import io.swagger.model.OneOfAllPetsResponseItems;
 import java.util.ArrayList;
 import java.util.List;
 
 
 
 
-public class AnimalFarm extends ArrayList<Animal>  {
+public class AllPetsResponse extends ArrayList<OneOfAllPetsResponseItems>  {
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -17,7 +17,7 @@ public class AnimalFarm extends ArrayList<Animal>  {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    AnimalFarm animalFarm = (AnimalFarm) o;
+    AllPetsResponse allPetsResponse = (AllPetsResponse) o;
     return true;
   }
 
@@ -29,7 +29,7 @@ public class AnimalFarm extends ArrayList<Animal>  {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class AnimalFarm {\n");
+    sb.append("class AllPetsResponse {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
     sb.append("}");
     return sb.toString();
